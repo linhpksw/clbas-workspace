@@ -21,7 +21,7 @@ const useUser = () => {
 
     const { data, error, isLoading } = useSWR(username ? `${BASE_URL}/${username}/profile` : null, fetcher, {
         shouldRetryOnError: false,
-        revalidateOnFocus: true,
+        revalidateOnFocus: false,
         revalidateOnReconnect: true,
     });
 

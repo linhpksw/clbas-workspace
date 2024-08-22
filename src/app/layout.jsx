@@ -32,6 +32,34 @@ const beVietnamPro = Be_Vietnam_Pro({
     subsets: ["vietnamese"],
 });
 
+export const metadata = {
+    applicationName: 'Quản lý CLB Ánh Sáng',
+    title: {
+        template: '%s | Quản lý CLB Ánh Sáng',
+        default: 'Quản lý CLB Ánh Sáng',
+    },
+    authors: {
+        name: "linhpksw",
+        url: "https://github.com/linhpksw",
+    },
+    description: 'Ứng dụng quản lý CLB Ánh Sáng',
+    keywords: [
+        'CLB Ánh Sáng',
+        'Quản lý',
+        'Ứng dụng',
+        'React',
+        'Next.js',
+        'PWA'
+    ],
+    manifest: "/manifest.json",
+    appleWebApp: {
+        capable: true,
+        statusBarStyle: "default",
+        title: 'Quản lý CLB Ánh Sáng',
+        startupImage: ["/icon.png"],
+    },
+};
+
 export default function RootLayout({ children }) {
     return (
         <html lang="vi">
